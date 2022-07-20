@@ -1,0 +1,224 @@
+header {
+    background-color: blue;
+    width: 100%;
+    height: 70px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Finlandica', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+    ;
+}
+
+h4 {
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+nav span a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav span {
+    display: flex;
+    padding: 10px 5px;
+    align-items: center;
+}
+
+nav span img {
+    width: 40.42px;
+    height: 51px;
+}
+
+nav {
+    display: flex;
+    margin-left: 10em;
+    height: 75px;
+    /* width: 900px; */
+    width: auto;
+    /* left: nullpx; */
+    top: nullpx;
+    border-radius: 0px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0;
+}
+
+.top-full {
+    background-color: #FFFFFF;
+    height: auto;
+    width: 870px;
+    /* left: 100px; */
+    top: 130px;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+
+}
+
+/* Top Players Style  */
+.top-players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    margin-left: 40px;
+    margin-right: 4em;
+    margin-bottom: 30px;
+}
+
+.top-plyear {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.top-plyear img {
+    height: 56px;
+    width: 56px;
+}
+
+.top {
+    color: #562EFF;
+    font-size: 24px;
+    padding: 20px 20px;
+}
+
+.player {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* /-----* Blog Part Styles ------------- */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    margin-left: 30px;
+    grid-column-gap: 30px;
+    margin-right: 30px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog .thumbnail img {
+    width: 200px;
+    height: 127px;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-title {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.author-name {
+    font-size: 16px;
+    color: #9F9F9F;
+}
+
+.author-name a {
+    text-decoration: none;
+    color: #562EFF;
+}
+
+/* ----------------------------------
+ -------------------------Course Part-----------------
+------------------------------------ */
+.courses {
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.course {
+    margin: 5% 5%;
+    box-shadow: 1px 1px 10px gainsboro;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.course .course-banner img {
+    width: 240px;
+    height: 141px;
+}
+
+.course-title {
+    font-size: 20.0336px;
+}
+
+.course-outhor {
+    font-size: 17px;
+    font-weight: 400;
+    color: #ED6B4F;
+}
+
+.course-info {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filld {
+    color: #FFC014;
+}
+
+.empty {
+    color: #AEAEAE;
+
+}
+
+.course-deuration {
+    background-color: #e98f8f;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+/* --------------------------
+------------ Added Media Quary--------------
+---------------------------------------------- */
+
+@media only screen (max-width: 776px) {
+    .top-full {
+        width: 100%;
+    }
+
+    .top-players,
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-plyear,
+    header {
+        flex-direction: column;
+    }
+
+}
